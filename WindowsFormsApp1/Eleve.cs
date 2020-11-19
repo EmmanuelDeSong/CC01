@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CC01.BLL;
+using System;
+using CC01.BO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,29 @@ namespace WindowsFormsApp1
         public Eleve()
         {
             InitializeComponent();
+        }
+
+        private void btnConfirm_Click(object sender, EventArgs e)
+        {
+
+            Eleve eleve = new Eleve();
+            EleveBLO eleveBLO = new EleveBLO();
+           
+
+            MessageBox.Show
+                (
+                "Save done!",
+                "Confirmation",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information
+                );
+            txtNom.Clear();
+            txtPrenom.Clear();
+            txtTelephone.Clear();
+            txtMatricule.Clear();
+            txtVille.Clear();
+            txtNaissance.Clear();
+            txtEcole.Clear();
         }
     }
 }

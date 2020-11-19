@@ -15,9 +15,14 @@ namespace CC01.BO
         public string Ecole { get; set; }
         public string Datedenaissance { get; set; }
         public string Ville { get; set; }
-        public int Numerodetelephone { get; set; }
+        public string  Numerodetelephone { get; set; }
 
-        public Eleve(string nom, string prenom, string matricule, string ecole, string datedenaissance, string ville, int numerodetelephone)
+        public Eleve()
+        {
+
+        }
+
+        public Eleve(string nom, string prenom, string matricule, string ecole, string datedenaissance, string ville, string numerodetelephone)
         {
             Nom = nom;
             Prenom = prenom;

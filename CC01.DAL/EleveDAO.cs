@@ -26,9 +26,10 @@ namespace CC01.DAL
             if(!file.Exists)
             {
                 file.Create().Close();
+                
             }
 
-            if(file.Length>0 )
+            if(file.Length > 0 )
             {
                 using(StreamReader sr= new StreamReader(
                     file.FullName))
@@ -72,6 +73,11 @@ namespace CC01.DAL
                 string json = JsonConvert.SerializeObject(eleve);
                 sw.WriteLine(json);
             }
+        }
+
+        public IEnumerable<Eleve> Find()
+        {
+            return new List<Eleve>(eleves);
         }
     }
 }

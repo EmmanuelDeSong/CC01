@@ -46,14 +46,10 @@
             this.label7 = new System.Windows.Forms.Label();
             this.txtVille = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.cmbAnnee = new System.Windows.Forms.ComboBox();
-            this.cmbMois = new System.Windows.Forms.ComboBox();
-            this.cmbJour = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.txtNaissance = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -126,6 +122,7 @@
             this.btnConfirm.TabIndex = 10;
             this.btnConfirm.Text = "Confirm";
             this.btnConfirm.UseVisualStyleBackColor = true;
+            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
             // txtPrenom
             // 
@@ -173,11 +170,11 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.txtNaissance);
             this.panel1.Controls.Add(this.txtTelephone);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.txtVille);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.checkBox2);
             this.panel1.Controls.Add(this.checkBox1);
@@ -231,125 +228,6 @@
             this.label6.TabIndex = 20;
             this.label6.Text = "Ville";
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.cmbAnnee);
-            this.panel2.Controls.Add(this.cmbMois);
-            this.panel2.Controls.Add(this.cmbJour);
-            this.panel2.Location = new System.Drawing.Point(263, 185);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(160, 28);
-            this.panel2.TabIndex = 19;
-            // 
-            // cmbAnnee
-            // 
-            this.cmbAnnee.FormattingEnabled = true;
-            this.cmbAnnee.Items.AddRange(new object[] {
-            "1980",
-            "1981",
-            "1982",
-            "1983",
-            "1984",
-            "1985",
-            "1986",
-            "1987",
-            "1988",
-            "1989",
-            "1990",
-            "1991",
-            "1992",
-            "1993",
-            "1994",
-            "1995",
-            "1996",
-            "1997",
-            "1998",
-            "1999",
-            "2000",
-            "2001",
-            "2002",
-            "2003",
-            "2004",
-            "2005",
-            "2006",
-            "2007",
-            "2008",
-            "2009",
-            "2010",
-            "2011",
-            "2012",
-            "2013",
-            "2014",
-            "2015",
-            "2016",
-            "2017",
-            "2018",
-            "2019"});
-            this.cmbAnnee.Location = new System.Drawing.Point(107, 3);
-            this.cmbAnnee.Name = "cmbAnnee";
-            this.cmbAnnee.Size = new System.Drawing.Size(46, 21);
-            this.cmbAnnee.TabIndex = 21;
-            // 
-            // cmbMois
-            // 
-            this.cmbMois.FormattingEnabled = true;
-            this.cmbMois.Items.AddRange(new object[] {
-            "Janvier",
-            "Février",
-            "Mars",
-            "Avril",
-            "Mai",
-            "Juin",
-            "Juillet",
-            "Aout",
-            "Septembre",
-            "Octobre",
-            "Novembre",
-            "Décembre"});
-            this.cmbMois.Location = new System.Drawing.Point(55, 4);
-            this.cmbMois.Name = "cmbMois";
-            this.cmbMois.Size = new System.Drawing.Size(46, 21);
-            this.cmbMois.TabIndex = 20;
-            // 
-            // cmbJour
-            // 
-            this.cmbJour.FormattingEnabled = true;
-            this.cmbJour.Items.AddRange(new object[] {
-            "01",
-            "02",
-            "03",
-            "04",
-            "05",
-            "06",
-            "07",
-            "08",
-            "09",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30"});
-            this.cmbJour.Location = new System.Drawing.Point(3, 3);
-            this.cmbJour.Name = "cmbJour";
-            this.cmbJour.Size = new System.Drawing.Size(46, 21);
-            this.cmbJour.TabIndex = 18;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -358,6 +236,14 @@
             this.label5.Size = new System.Drawing.Size(96, 13);
             this.label5.TabIndex = 16;
             this.label5.Text = "Date de naissance";
+            // 
+            // txtNaissance
+            // 
+            this.txtNaissance.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNaissance.Location = new System.Drawing.Point(263, 184);
+            this.txtNaissance.Name = "txtNaissance";
+            this.txtNaissance.Size = new System.Drawing.Size(217, 29);
+            this.txtNaissance.TabIndex = 24;
             // 
             // Eleve
             // 
@@ -372,7 +258,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -393,15 +278,12 @@
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ComboBox cmbJour;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.ComboBox cmbAnnee;
-        private System.Windows.Forms.ComboBox cmbMois;
         private System.Windows.Forms.TextBox txtTelephone;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtVille;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtNaissance;
     }
 }
 

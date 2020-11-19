@@ -26,5 +26,11 @@ namespace CC01.BLL
         {
             eleveRepo.Remove(eleve);
         }
+
+        public IEnumerable<Eleve> ListeDesEleves()
+        {
+            return eleveRepo.Find();
+        }
+
     }
 }
