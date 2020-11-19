@@ -52,10 +52,28 @@
     <Compile Include="Eleve.Designer.cs">
       <DependentUpon>Eleve.cs</DependentUpon>
     </Compile>
+    <Compile Include="EnreEcole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnreEcole.Designer.cs">
+      <DependentUpon>EnreEcole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnreEleve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnreEleve.Designer.cs">
+      <DependentUpon>EnreEleve.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Eleve.resx">
       <DependentUpon>Eleve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnreEcole.resx">
+      <DependentUpon>EnreEcole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnreEleve.resx">
+      <DependentUpon>EnreEleve.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

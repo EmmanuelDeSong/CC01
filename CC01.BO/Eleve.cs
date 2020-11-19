@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CC01.BO
 {
-    class Eleve
+    public class Eleve
     {
         public string Nom { get; set; }
         public string Prenom { get; set; }
@@ -26,6 +26,17 @@ namespace CC01.BO
             Datedenaissance = datedenaissance;
             Ville = ville;
             Numerodetelephone = numerodetelephone;
+        }
+
+        public override bool Equals(object obj)
+        {
+            return obj is Eleve eleve &&
+                   Matricule == eleve.Matricule;
+        }
+
+        public override int GetHashCode()
+        {
+            return 797189699 + EqualityComparer<string>.Default.GetHashCode(Matricule);
         }
     }
 }
