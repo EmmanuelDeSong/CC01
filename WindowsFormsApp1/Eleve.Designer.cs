@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class Form1
+    partial class Eleve
     {
         /// <summary>
         /// Variable nécessaire au concepteur.
@@ -42,15 +42,15 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.cmbJour = new System.Windows.Forms.ComboBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.cmbMois = new System.Windows.Forms.ComboBox();
-            this.cmbAnnee = new System.Windows.Forms.ComboBox();
-            this.txtVille = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.txtTelephone = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.txtVille = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.cmbAnnee = new System.Windows.Forms.ComboBox();
+            this.cmbMois = new System.Windows.Forms.ComboBox();
+            this.cmbJour = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -110,6 +110,7 @@
             // 
             // btnCancel
             // 
+            this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancel.Location = new System.Drawing.Point(63, 469);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(170, 46);
@@ -196,53 +197,39 @@
             this.panel1.Size = new System.Drawing.Size(503, 533);
             this.panel1.TabIndex = 0;
             // 
-            // label5
+            // txtTelephone
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(260, 168);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(96, 13);
-            this.label5.TabIndex = 16;
-            this.label5.Text = "Date de naissance";
+            this.txtTelephone.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTelephone.Location = new System.Drawing.Point(263, 321);
+            this.txtTelephone.Name = "txtTelephone";
+            this.txtTelephone.Size = new System.Drawing.Size(217, 29);
+            this.txtTelephone.TabIndex = 23;
             // 
-            // cmbJour
+            // label7
             // 
-            this.cmbJour.FormattingEnabled = true;
-            this.cmbJour.Items.AddRange(new object[] {
-            "01",
-            "02",
-            "03",
-            "04",
-            "05",
-            "06",
-            "07",
-            "08",
-            "09",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30"});
-            this.cmbJour.Location = new System.Drawing.Point(3, 3);
-            this.cmbJour.Name = "cmbJour";
-            this.cmbJour.Size = new System.Drawing.Size(46, 21);
-            this.cmbJour.TabIndex = 18;
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(260, 305);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(83, 13);
+            this.label7.TabIndex = 22;
+            this.label7.Text = "Num Telephone";
+            // 
+            // txtVille
+            // 
+            this.txtVille.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVille.Location = new System.Drawing.Point(263, 259);
+            this.txtVille.Name = "txtVille";
+            this.txtVille.Size = new System.Drawing.Size(217, 29);
+            this.txtVille.TabIndex = 21;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(260, 243);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(26, 13);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "Ville";
             // 
             // panel2
             // 
@@ -253,27 +240,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(160, 28);
             this.panel2.TabIndex = 19;
-            // 
-            // cmbMois
-            // 
-            this.cmbMois.FormattingEnabled = true;
-            this.cmbMois.Items.AddRange(new object[] {
-            "Janvier",
-            "Février",
-            "Mars",
-            "Avril",
-            "Mai",
-            "Juin",
-            "Juillet",
-            "Aout",
-            "Septembre",
-            "Octobre",
-            "Novembre",
-            "Décembre"});
-            this.cmbMois.Location = new System.Drawing.Point(55, 4);
-            this.cmbMois.Name = "cmbMois";
-            this.cmbMois.Size = new System.Drawing.Size(46, 21);
-            this.cmbMois.TabIndex = 20;
             // 
             // cmbAnnee
             // 
@@ -324,41 +290,76 @@
             this.cmbAnnee.Size = new System.Drawing.Size(46, 21);
             this.cmbAnnee.TabIndex = 21;
             // 
-            // txtVille
+            // cmbMois
             // 
-            this.txtVille.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtVille.Location = new System.Drawing.Point(263, 259);
-            this.txtVille.Name = "txtVille";
-            this.txtVille.Size = new System.Drawing.Size(217, 29);
-            this.txtVille.TabIndex = 21;
+            this.cmbMois.FormattingEnabled = true;
+            this.cmbMois.Items.AddRange(new object[] {
+            "Janvier",
+            "Février",
+            "Mars",
+            "Avril",
+            "Mai",
+            "Juin",
+            "Juillet",
+            "Aout",
+            "Septembre",
+            "Octobre",
+            "Novembre",
+            "Décembre"});
+            this.cmbMois.Location = new System.Drawing.Point(55, 4);
+            this.cmbMois.Name = "cmbMois";
+            this.cmbMois.Size = new System.Drawing.Size(46, 21);
+            this.cmbMois.TabIndex = 20;
             // 
-            // label6
+            // cmbJour
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(260, 243);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(26, 13);
-            this.label6.TabIndex = 20;
-            this.label6.Text = "Ville";
+            this.cmbJour.FormattingEnabled = true;
+            this.cmbJour.Items.AddRange(new object[] {
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08",
+            "09",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30"});
+            this.cmbJour.Location = new System.Drawing.Point(3, 3);
+            this.cmbJour.Name = "cmbJour";
+            this.cmbJour.Size = new System.Drawing.Size(46, 21);
+            this.cmbJour.TabIndex = 18;
             // 
-            // txtTelephone
+            // label5
             // 
-            this.txtTelephone.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelephone.Location = new System.Drawing.Point(263, 321);
-            this.txtTelephone.Name = "txtTelephone";
-            this.txtTelephone.Size = new System.Drawing.Size(217, 29);
-            this.txtTelephone.TabIndex = 23;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(260, 168);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(96, 13);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "Date de naissance";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(260, 305);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(83, 13);
-            this.label7.TabIndex = 22;
-            this.label7.Text = "Num Telephone";
-            // 
-            // Form1
+            // Eleve
             // 
             this.AcceptButton = this.btnConfirm;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -366,8 +367,8 @@
             this.CancelButton = this.btnCancel;
             this.ClientSize = new System.Drawing.Size(501, 526);
             this.Controls.Add(this.panel1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Eleve";
+            this.Text = "Eleve";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
