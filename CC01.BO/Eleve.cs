@@ -15,14 +15,14 @@ namespace CC01.BO
         public string Ecole { get; set; }
         public string Datedenaissance { get; set; }
         public string Ville { get; set; }
-        public string  Numerodetelephone { get; set; }
+       
 
         public Eleve()
         {
 
         }
 
-        public Eleve(string nom, string prenom, string matricule, string ecole, string datedenaissance, string ville, string numerodetelephone)
+        public Eleve(string nom, string prenom, string matricule, string ecole, string datedenaissance, string ville)
         {
             Nom = nom;
             Prenom = prenom;
@@ -30,7 +30,7 @@ namespace CC01.BO
             Ecole = ecole;
             Datedenaissance = datedenaissance;
             Ville = ville;
-            Numerodetelephone = numerodetelephone;
+           
         }
 
         public override bool Equals(object obj)

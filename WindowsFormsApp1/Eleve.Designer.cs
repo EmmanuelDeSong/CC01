@@ -42,12 +42,12 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtNaissance = new System.Windows.Forms.TextBox();
             this.txtTelephone = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtVille = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtNaissance = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -113,6 +113,7 @@
             this.btnCancel.TabIndex = 9;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnConfirm
             // 
@@ -194,6 +195,14 @@
             this.panel1.Size = new System.Drawing.Size(503, 533);
             this.panel1.TabIndex = 0;
             // 
+            // txtNaissance
+            // 
+            this.txtNaissance.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNaissance.Location = new System.Drawing.Point(263, 184);
+            this.txtNaissance.Name = "txtNaissance";
+            this.txtNaissance.Size = new System.Drawing.Size(217, 29);
+            this.txtNaissance.TabIndex = 24;
+            // 
             // txtTelephone
             // 
             this.txtTelephone.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -237,14 +246,6 @@
             this.label5.TabIndex = 16;
             this.label5.Text = "Date de naissance";
             // 
-            // txtNaissance
-            // 
-            this.txtNaissance.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNaissance.Location = new System.Drawing.Point(263, 184);
-            this.txtNaissance.Name = "txtNaissance";
-            this.txtNaissance.Size = new System.Drawing.Size(217, 29);
-            this.txtNaissance.TabIndex = 24;
-            // 
             // Eleve
             // 
             this.AcceptButton = this.btnConfirm;
@@ -254,6 +255,7 @@
             this.ClientSize = new System.Drawing.Size(501, 526);
             this.Controls.Add(this.panel1);
             this.Name = "Eleve";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Eleve";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);

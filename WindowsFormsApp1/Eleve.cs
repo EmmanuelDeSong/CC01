@@ -41,5 +41,16 @@ namespace WindowsFormsApp1
             txtNaissance.Clear();
             txtEcole.Clear();
         }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            txtNom.Clear();
+            txtPrenom.Clear();
+            txtTelephone.Clear();
+            txtMatricule.Clear();
+            txtVille.Clear();
+            txtNaissance.Clear();
+            txtEcole.Clear();
+        }
     }
 }
