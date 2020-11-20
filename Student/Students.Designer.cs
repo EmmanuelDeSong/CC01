@@ -66,12 +66,14 @@
             // 
             // btnValider
             // 
+            this.btnValider.BackColor = System.Drawing.Color.SpringGreen;
             this.btnValider.Location = new System.Drawing.Point(78, 429);
             this.btnValider.Name = "btnValider";
             this.btnValider.Size = new System.Drawing.Size(144, 58);
             this.btnValider.TabIndex = 2;
             this.btnValider.Text = "Valider";
-            this.btnValider.UseVisualStyleBackColor = true;
+            this.btnValider.UseVisualStyleBackColor = false;
+            this.btnValider.Click += new System.EventHandler(this.btnValider_Click);
             // 
             // txtNom
             // 
@@ -117,12 +119,13 @@
             // 
             // btnAnnuler
             // 
+            this.btnAnnuler.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnAnnuler.Location = new System.Drawing.Point(244, 429);
             this.btnAnnuler.Name = "btnAnnuler";
             this.btnAnnuler.Size = new System.Drawing.Size(130, 58);
             this.btnAnnuler.TabIndex = 8;
             this.btnAnnuler.Text = "Annuler";
-            this.btnAnnuler.UseVisualStyleBackColor = true;
+            this.btnAnnuler.UseVisualStyleBackColor = false;
             this.btnAnnuler.Click += new System.EventHandler(this.btnAnnuler_Click);
             // 
             // txtVille
@@ -178,18 +181,20 @@
             // 
             // btnFermer
             // 
+            this.btnFermer.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnFermer.Location = new System.Drawing.Point(395, 429);
             this.btnFermer.Name = "btnFermer";
             this.btnFermer.Size = new System.Drawing.Size(130, 58);
             this.btnFermer.TabIndex = 15;
             this.btnFermer.Text = "Retour";
-            this.btnFermer.UseVisualStyleBackColor = true;
+            this.btnFermer.UseVisualStyleBackColor = false;
             this.btnFermer.Click += new System.EventHandler(this.btnFermer_Click);
             // 
             // Students
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(634, 532);
             this.Controls.Add(this.btnFermer);
             this.Controls.Add(this.lblVille);

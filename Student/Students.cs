@@ -36,5 +36,16 @@ namespace Student
             txtEcole.Clear();
             txtNaissance.Clear();
         }
+
+        private void btnValider_Click(object sender, EventArgs e)
+        {
+            string message = "Eleve enregistrés avec succès";
+            string title = "Confirmation";
+            MessageBoxButtons buttons = MessageBoxButtons.OK;
+
+            DialogResult result = MessageBox.Show(message, title, buttons);
+
+            
+        }
     }
 }

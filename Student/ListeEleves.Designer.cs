@@ -77,6 +77,7 @@
             // 
             // btnNouveau
             // 
+            this.btnNouveau.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnNouveau.Location = new System.Drawing.Point(663, 116);
             this.btnNouveau.Name = "btnNouveau";
             this.btnNouveau.Size = new System.Drawing.Size(150, 52);
@@ -87,6 +88,7 @@
             // 
             // btnModifier
             // 
+            this.btnModifier.ForeColor = System.Drawing.Color.Fuchsia;
             this.btnModifier.Location = new System.Drawing.Point(666, 210);
             this.btnModifier.Name = "btnModifier";
             this.btnModifier.Size = new System.Drawing.Size(147, 58);
@@ -96,6 +98,7 @@
             // 
             // btnSupprimer
             // 
+            this.btnSupprimer.ForeColor = System.Drawing.Color.Red;
             this.btnSupprimer.Location = new System.Drawing.Point(666, 329);
             this.btnSupprimer.Name = "btnSupprimer";
             this.btnSupprimer.Size = new System.Drawing.Size(147, 54);
@@ -138,6 +141,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(852, 490);
             this.Controls.Add(this.btnSupprimer);
             this.Controls.Add(this.btnModifier);
