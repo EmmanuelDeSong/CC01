@@ -2,22 +2,22 @@
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Data;
 using System.IO;
-using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace CC01.DAL
 {
-
-    public class EleveDAO
+    public class EcoleDAO
     {
-        private static List<Eleve> elèves;
-        private const string FILE_NAME = @"eleves.json";
+        private static List<Ecole> ecoles;
+        private const string FILE_NAME = @"Ecole.json";
         private readonly string dbFolder;
         private FileInfo file;
-        public EleveDAO(string dbFolder)
+
+        public EcoleDAO(string dbFolder)
         {
             this.dbFolder = dbFolder;
             file = new FileInfo(Path.Combine(this.dbFolder, FILE_NAME));
@@ -35,33 +35,33 @@ namespace CC01.DAL
                 using (StreamReader sr = new StreamReader(file.FullName))
                 {
                     string json = sr.ReadToEnd();
-                    elèves = JsonConvert.DeserializeObject<List<Eleve>>(json);
+                    ecoles = JsonConvert.DeserializeObject<List<Ecole>>(json);
                 }
             }
-            if (elèves == null)
+            if (ecoles == null)
             {
-                elèves = new List<Eleve>();
+                ecoles = new List<Ecole>();
             }
         }
 
-        public void Set(Eleve oldEtudiant, Eleve newEtudiant)
+        public void Set(Ecole oldEcole, Ecole newEcole)
         {
-            var oldIndex = elèves.IndexOf(oldEtudiant);
-            var newIndex = elèves.IndexOf(newEtudiant);
+            var oldIndex = ecoles.IndexOf(oldEcole);
+            var newIndex = ecoles.IndexOf(newEcole);
             if (oldIndex < 0)
-                throw new KeyNotFoundException("The student exists !");
+                throw new KeyNotFoundException("The school doesn't exists !");
             if (newIndex >= 0 && oldIndex != newIndex)
-                throw new DuplicateNameException("This Student identified already exists !");
-            elèves[oldIndex] = newEtudiant;
+                throw new DuplicateNameException("This school reference already exists !");
+            ecoles[oldIndex] = newEcole;
             Save();
         }
 
-        public void Add(Eleve etudiant)
+        public void Add(Ecole ecole)
         {
-            var index = elèves.IndexOf(etudiant);
+            var index = ecoles.IndexOf(ecole);
             if (index >= 0)
-                throw new DuplicateNameException("This Student identified already exists !");
-            elèves.Add(etudiant);
+                throw new DuplicateNameException("This school reference already exists !");
+            ecoles.Add(ecole);
             Save();
         }
 
@@ -69,25 +69,26 @@ namespace CC01.DAL
         {
             using (StreamWriter sw = new StreamWriter(file.FullName, false))
             {
-                string json = JsonConvert.SerializeObject(elèves);
+                string json = JsonConvert.SerializeObject(ecoles);
                 sw.WriteLine(json);
             }
         }
 
-        public void Remove(Eleve etudiant)
+        public void Remove(Ecole ecole)
         {
-            elèves.Remove(etudiant);
+            ecoles.Remove(ecole);
             Save();
         }
 
-        public IEnumerable<Eleve> Find()
+        public IEnumerable<Ecole> Find()
         {
-            return new List<Eleve>(elèves);
+            return new List<Ecole>(ecoles);
         }
 
-        public IEnumerable<Eleve> Find(Func<Eleve, bool> predicate)
+        public IEnumerable<Ecole> Find(Func<Ecole, bool> predicate)
         {
-            return new List<Eleve>(elèves.Where(predicate).ToArray());
+            return new List<Ecole>(ecoles.Where(predicate).ToArray());
         }
+
     }
 }

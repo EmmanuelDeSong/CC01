@@ -6,15 +6,16 @@ using System.Threading.Tasks;
 
 namespace CC01.BO
 {
+    [Serializable]
     public class Eleve
     {
         public string Nom { get; set; }
         public string Prenom { get; set; }
-
         public string Matricule { get; set; }
         public string Ecole { get; set; }
         public string Datedenaissance { get; set; }
         public string Ville { get; set; }
+        public byte[] Photo { get; set; }
        
 
         public Eleve()
@@ -22,7 +23,7 @@ namespace CC01.BO
 
         }
 
-        public Eleve(string nom, string prenom, string matricule, string ecole, string datedenaissance, string ville)
+        public Eleve(string nom, string prenom, string matricule, string ecole, string datedenaissance, string ville, byte[] photo)
         {
             Nom = nom;
             Prenom = prenom;
@@ -30,7 +31,7 @@ namespace CC01.BO
             Ecole = ecole;
             Datedenaissance = datedenaissance;
             Ville = ville;
-           
+            Photo = photo;
         }
 
         public override bool Equals(object obj)

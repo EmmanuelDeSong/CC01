@@ -49,27 +49,31 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(16, 15);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(163, 140);
+            this.pictureBox1.Size = new System.Drawing.Size(217, 172);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // lblNom
             // 
             this.lblNom.AutoSize = true;
-            this.lblNom.Location = new System.Drawing.Point(12, 203);
+            this.lblNom.Location = new System.Drawing.Point(16, 250);
+            this.lblNom.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNom.Name = "lblNom";
-            this.lblNom.Size = new System.Drawing.Size(29, 13);
+            this.lblNom.Size = new System.Drawing.Size(37, 17);
             this.lblNom.TabIndex = 1;
             this.lblNom.Text = "Nom";
             // 
             // btnValider
             // 
             this.btnValider.BackColor = System.Drawing.Color.SpringGreen;
-            this.btnValider.Location = new System.Drawing.Point(78, 429);
+            this.btnValider.Location = new System.Drawing.Point(104, 528);
+            this.btnValider.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnValider.Name = "btnValider";
-            this.btnValider.Size = new System.Drawing.Size(144, 58);
+            this.btnValider.Size = new System.Drawing.Size(192, 71);
             this.btnValider.TabIndex = 2;
             this.btnValider.Text = "Valider";
             this.btnValider.UseVisualStyleBackColor = false;
@@ -77,52 +81,58 @@
             // 
             // txtNom
             // 
-            this.txtNom.Location = new System.Drawing.Point(15, 229);
+            this.txtNom.Location = new System.Drawing.Point(20, 282);
+            this.txtNom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNom.Multiline = true;
             this.txtNom.Name = "txtNom";
-            this.txtNom.Size = new System.Drawing.Size(239, 39);
+            this.txtNom.Size = new System.Drawing.Size(317, 47);
             this.txtNom.TabIndex = 3;
             // 
             // txtMatricule
             // 
-            this.txtMatricule.Location = new System.Drawing.Point(15, 297);
+            this.txtMatricule.Location = new System.Drawing.Point(20, 366);
+            this.txtMatricule.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtMatricule.Multiline = true;
             this.txtMatricule.Name = "txtMatricule";
-            this.txtMatricule.Size = new System.Drawing.Size(239, 37);
+            this.txtMatricule.Size = new System.Drawing.Size(317, 45);
             this.txtMatricule.TabIndex = 5;
             // 
             // lblMatricule
             // 
             this.lblMatricule.AutoSize = true;
-            this.lblMatricule.Location = new System.Drawing.Point(12, 271);
+            this.lblMatricule.Location = new System.Drawing.Point(16, 334);
+            this.lblMatricule.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMatricule.Name = "lblMatricule";
-            this.lblMatricule.Size = new System.Drawing.Size(50, 13);
+            this.lblMatricule.Size = new System.Drawing.Size(65, 17);
             this.lblMatricule.TabIndex = 4;
             this.lblMatricule.Text = "Matricule";
             // 
             // txtEcole
             // 
-            this.txtEcole.Location = new System.Drawing.Point(15, 363);
+            this.txtEcole.Location = new System.Drawing.Point(20, 447);
+            this.txtEcole.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtEcole.Multiline = true;
             this.txtEcole.Name = "txtEcole";
-            this.txtEcole.Size = new System.Drawing.Size(239, 36);
+            this.txtEcole.Size = new System.Drawing.Size(317, 43);
             this.txtEcole.TabIndex = 7;
             // 
             // lblEcole
             // 
             this.lblEcole.AutoSize = true;
-            this.lblEcole.Location = new System.Drawing.Point(12, 337);
+            this.lblEcole.Location = new System.Drawing.Point(16, 415);
+            this.lblEcole.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEcole.Name = "lblEcole";
-            this.lblEcole.Size = new System.Drawing.Size(34, 13);
+            this.lblEcole.Size = new System.Drawing.Size(43, 17);
             this.lblEcole.TabIndex = 6;
             this.lblEcole.Text = "Ecole";
             // 
             // btnAnnuler
             // 
             this.btnAnnuler.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnAnnuler.Location = new System.Drawing.Point(244, 429);
+            this.btnAnnuler.Location = new System.Drawing.Point(325, 528);
+            this.btnAnnuler.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAnnuler.Name = "btnAnnuler";
-            this.btnAnnuler.Size = new System.Drawing.Size(130, 58);
+            this.btnAnnuler.Size = new System.Drawing.Size(173, 71);
             this.btnAnnuler.TabIndex = 8;
             this.btnAnnuler.Text = "Annuler";
             this.btnAnnuler.UseVisualStyleBackColor = false;
@@ -130,61 +140,68 @@
             // 
             // txtVille
             // 
-            this.txtVille.Location = new System.Drawing.Point(317, 363);
+            this.txtVille.Location = new System.Drawing.Point(423, 447);
+            this.txtVille.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtVille.Multiline = true;
             this.txtVille.Name = "txtVille";
-            this.txtVille.Size = new System.Drawing.Size(239, 36);
+            this.txtVille.Size = new System.Drawing.Size(317, 43);
             this.txtVille.TabIndex = 11;
             // 
             // txtNaissance
             // 
-            this.txtNaissance.Location = new System.Drawing.Point(317, 297);
+            this.txtNaissance.Location = new System.Drawing.Point(423, 366);
+            this.txtNaissance.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNaissance.Multiline = true;
             this.txtNaissance.Name = "txtNaissance";
-            this.txtNaissance.Size = new System.Drawing.Size(239, 37);
+            this.txtNaissance.Size = new System.Drawing.Size(317, 45);
             this.txtNaissance.TabIndex = 10;
             // 
             // txtPrenom
             // 
-            this.txtPrenom.Location = new System.Drawing.Point(317, 229);
+            this.txtPrenom.Location = new System.Drawing.Point(423, 282);
+            this.txtPrenom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPrenom.Multiline = true;
             this.txtPrenom.Name = "txtPrenom";
-            this.txtPrenom.Size = new System.Drawing.Size(239, 39);
+            this.txtPrenom.Size = new System.Drawing.Size(317, 47);
             this.txtPrenom.TabIndex = 9;
             // 
             // lblPrenom
             // 
             this.lblPrenom.AutoSize = true;
-            this.lblPrenom.Location = new System.Drawing.Point(314, 213);
+            this.lblPrenom.Location = new System.Drawing.Point(419, 262);
+            this.lblPrenom.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPrenom.Name = "lblPrenom";
-            this.lblPrenom.Size = new System.Drawing.Size(43, 13);
+            this.lblPrenom.Size = new System.Drawing.Size(57, 17);
             this.lblPrenom.TabIndex = 12;
             this.lblPrenom.Text = "Prenom";
             // 
             // lblNaissance
             // 
             this.lblNaissance.AutoSize = true;
-            this.lblNaissance.Location = new System.Drawing.Point(314, 281);
+            this.lblNaissance.Location = new System.Drawing.Point(419, 346);
+            this.lblNaissance.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNaissance.Name = "lblNaissance";
-            this.lblNaissance.Size = new System.Drawing.Size(98, 13);
+            this.lblNaissance.Size = new System.Drawing.Size(128, 17);
             this.lblNaissance.TabIndex = 13;
             this.lblNaissance.Text = "Date de Naissance";
             // 
             // lblVille
             // 
             this.lblVille.AutoSize = true;
-            this.lblVille.Location = new System.Drawing.Point(314, 347);
+            this.lblVille.Location = new System.Drawing.Point(419, 427);
+            this.lblVille.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblVille.Name = "lblVille";
-            this.lblVille.Size = new System.Drawing.Size(26, 13);
+            this.lblVille.Size = new System.Drawing.Size(34, 17);
             this.lblVille.TabIndex = 14;
             this.lblVille.Text = "Ville";
             // 
             // btnFermer
             // 
             this.btnFermer.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnFermer.Location = new System.Drawing.Point(395, 429);
+            this.btnFermer.Location = new System.Drawing.Point(527, 528);
+            this.btnFermer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnFermer.Name = "btnFermer";
-            this.btnFermer.Size = new System.Drawing.Size(130, 58);
+            this.btnFermer.Size = new System.Drawing.Size(173, 71);
             this.btnFermer.TabIndex = 15;
             this.btnFermer.Text = "Retour";
             this.btnFermer.UseVisualStyleBackColor = false;
@@ -192,10 +209,10 @@
             // 
             // Students
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(634, 532);
+            this.ClientSize = new System.Drawing.Size(845, 655);
             this.Controls.Add(this.btnFermer);
             this.Controls.Add(this.lblVille);
             this.Controls.Add(this.lblNaissance);
@@ -212,6 +229,7 @@
             this.Controls.Add(this.btnValider);
             this.Controls.Add(this.lblNom);
             this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Students";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Eleve";

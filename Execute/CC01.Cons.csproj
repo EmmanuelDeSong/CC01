@@ -54,9 +54,9 @@
       <Project>{c641e0ba-88c4-47a5-a695-006ae6fab4f0}</Project>
       <Name>CC01.BO</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Student\Student.csproj">
+    <ProjectReference Include="..\Student\CC01.WinForms.csproj">
       <Project>{91446314-d4f9-4511-b8c7-cf6b6e439e6f}</Project>
-      <Name>Student</Name>
+      <Name>CC01.WinForms</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

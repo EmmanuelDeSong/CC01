@@ -10,9 +10,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Student", "Student\Student.csproj", "{91446314-D4F9-4511-B8C7-CF6B6E439E6F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CC01.WinForms", "Student\CC01.WinForms.csproj", "{91446314-D4F9-4511-B8C7-CF6B6E439E6F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Execute", "Execute\Execute.csproj", "{C00CD0FB-7364-4485-893C-B51C330462E2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CC01.Cons", "Execute\CC01.Cons.csproj", "{C00CD0FB-7364-4485-893C-B51C330462E2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CC01.BLL", "CC01.BLL\CC01.BLL.csproj", "{4D247DB9-DD1C-467A-B86A-97A51BB1462B}"
 EndProject
